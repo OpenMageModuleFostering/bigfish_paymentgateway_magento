@@ -36,4 +36,7 @@
 <?php else: ?>
     <?php echo Mage::helper('paymentgateway')->__('Transaction ID: %s', $this->htmlEscape($this->getInfo()->getLastTransId())) ?><br />
 <?php endif; ?>
+<?php if ($this->getInfo()->getPoNumber() != ''): ?>
+    <?php echo Mage::helper('paymentgateway')->__('Anum: %s', $this->htmlEscape($this->getInfo()->getPoNumber())) ?><br />
+<?php endif; ?>
 <?php endif; ?>

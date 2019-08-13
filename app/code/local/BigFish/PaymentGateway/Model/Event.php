@@ -175,6 +175,7 @@ class BigFish_PaymentGateway_Model_Event
                 $this->_order->setState(Mage_Sales_Model_Order::STATE_PROCESSING, true, $msg);
                 // save transaction ID
                 $this->_order->getPayment()->setLastTransId($this->getEventData('ProviderTransactionId'));
+                $this->_order->getPayment()->setPoNumber($this->getEventData('Anum'));
                 // send new order email
                 $this->_order->sendNewOrderEmail();
                 $this->_order->setEmailSent(true);
@@ -186,6 +187,7 @@ class BigFish_PaymentGateway_Model_Event
                 $this->_order->setState(Mage_Sales_Model_Order::STATE_PENDING_PAYMENT, true, $msg);
                 // save transaction ID
                 $this->_order->getPayment()->setLastTransId($this->getEventData('ProviderTransactionId'));
+                $this->_order->getPayment()->setPoNumber($this->getEventData('Anum'));
                 break;
         }
         $this->_order->save();
