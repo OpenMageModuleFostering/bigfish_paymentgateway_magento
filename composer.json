@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/BigFish_PaymentGateway_Magento",
+    "type": "magento-module",
+    "license": "Custom-license",
+    "homepage": "",
+    "description": "A BIG FISH Payment Gateway egy olyan szolgáltatás, amely segítségével bármely Internetes kereskedő többféle elektronikus fizetési megoldást kínálhat webáruházában.",
+    "authors": [
+    {
+        "name": "BIG FISH Kft.",
+        "email": "dev@bigfish.hu"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

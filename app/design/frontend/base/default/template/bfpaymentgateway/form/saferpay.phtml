@@ -1,0 +1,23 @@
+<?php $_code = $this->getMethodCode(); ?>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li class="form-alt"><?php echo $this->getRedirectMessage() ?></li>
+	<?php if ($this->isOneClick()) { ?>
+    <li>
+		<input type="checkbox" id="<?php echo $_code ?>_one_click_payment" name="payment[<?php echo $_code; ?>][one_click_payment]" title="<?php echo $this->__('One Click Payment') ?>" value="true" style="margin-top: -4px;" />
+        <label for="<?php echo $_code ?>_one_click_payment" class="required" style="float: none;"><?php echo $this->__('One Click Payment') ?></label>
+    </li>
+	<?php } ?>
+	<?php
+		$i = 0;
+		foreach ($this->getPaymentMethods() as $paymentMethod) {
+			$i++;
+			echo '<input type="hidden" id="'.$_code.'_saferpay_payment_method_'.$i.'" name="payment['.$_code.'][payment_methods][]" value="'.$paymentMethod.'" />';
+		}
+	
+		$i = 0;
+		foreach ($this->getWallets() as $wallet) {
+			echo '<input type="hidden" id="'.$_code.'_saferpay_wallet_'.$i.'" name="payment['.$_code.'][wallets][]" value="'.$wallet.'" />';
+			$i++;
+		}
+	?>
+</ul>

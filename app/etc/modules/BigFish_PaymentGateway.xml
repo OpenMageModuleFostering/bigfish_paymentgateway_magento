@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BigFish_PaymentGateway>
+            <active>true</active>
+            <codePool>local</codePool>
+        </BigFish_PaymentGateway>
+    </modules>
+</config>

@@ -1,0 +1,5 @@
+<?php $_code = $this->getMethodCode(); ?>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li class="form-alt"><?php echo $this->getRedirectMessage() ?></li>
+	<input type="hidden" id="<?php echo $_code; ?>_wirecard_payment_type" name="payment[<?php echo $_code; ?>][payment_type]" value="<?php echo $this->getPaymentType(); ?>" />
+</ul>
