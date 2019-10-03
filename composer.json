@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/BigFish_PaymentGateway_Magento",
+    "name": "openmage-module-fostering\/bigfish_paymentgateway_magento",
     "type": "magento-module",
     "license": "Custom-license",
     "homepage": "",
