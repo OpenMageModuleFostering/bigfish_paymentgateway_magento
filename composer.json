@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/BigFish_PaymentGateway_Magento",
+    "name": "OpenMageModuleFostering\/BigFish_PaymentGateway_Magento",
     "type": "magento-module",
     "license": "Custom-license",
     "homepage": "",
-    "description": "A BIG FISH Payment Gateway egy olyan szolgáltatás, amely segítségével bármely Internetes kereskedő többféle elektronikus fizetési megoldást kínálhat webáruházában.",
+    "description": "A BIG FISH Payment Gateway egy olyan szolg\u00e1ltat\u00e1s, amely seg\u00edts\u00e9g\u00e9vel b\u00e1rmely Internetes keresked\u0151 t\u00f6bbf\u00e9le elektronikus fizet\u00e9si megold\u00e1st k\u00edn\u00e1lhat web\u00e1ruh\u00e1z\u00e1ban.",
     "authors": [
-    {
-        "name": "BIG FISH Kft.",
-        "email": "dev@bigfish.hu"
-    }
-],
+        {
+            "name": "BIG FISH Kft.",
+            "email": "dev@bigfish.hu"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
